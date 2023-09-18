@@ -1,0 +1,290 @@
+/* Reseting the dfault margin and padding */
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;1,100&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
+
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo img{
+    border: 3px solid white;
+    border-radius: 17px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    
+    
+}
+
+.nav-list{
+width: 70%;
+/* background-color:black; */
+display: flex;
+align-items: center;
+
+/* justify-content: center; */
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 26px 30px;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+
+}
+.nav-list li a:hover{
+    color: grey;
+}
+
+.rightNav{
+    /* background-color: blue; */
+    width: 30%;
+    text-align: right;
+    padding: 0px 23px;
+}
+#search{
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+
+.background{
+    background: rgba(0, 0, 0, 0.7) url(/Assets/Images/bacground.avif);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 65%;
+}
+.firstHalf{
+width: 80%;
+justify-content: center;
+flex-direction: column;
+display: flex;
+}
+.secondHalf{
+    width: 30%;
+
+}
+
+.secondHalf img{
+    padding-top: 22px;
+    display: block;
+    margin: auto;
+}
+
+.text-big{
+    font-size: 47px;
+    text-align: center;
+
+}
+
+.text-small{
+font-size: 15px;
+margin-top: 18px;
+}
+
+.btn{
+    padding: 8px 20px;
+    margin: 13px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;;
+}
+
+.btn-sm{
+    padding: 6px 10px;
+    vertical-align: middle;
+}
+
+
+.btn-dark{
+    color: black;
+    border: 2px solid grey;
+}
+
+
+/* Right Section Begins here */
+.section{
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+   
+
+}
+
+
+/* Khud se change kiya hai */
+.text-big-main{
+    font-size: 25px;
+}
+.paras{
+    padding: 0px 65px;
+}
+
+
+
+/*2nd Section */
+
+.section-left{
+  
+    flex-direction: row-reverse;
+
+}
+
+.sectionSubTag{
+    font-family: 'Roboto', sans-serif;
+}
+.thumbnail img{
+    border: 2px solid black;
+    border-radius:22px ;
+    margin-top: 19px;
+}
+
+/* Contact Section */
+
+.contact{
+    background-color: lightgray;
+    height: 50vh;
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    margin: 15px 0px;
+    padding: 5px 3px;
+}
+
+
+.text-footer{
+    font-size: 16px;
+    text-align: center;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+     background-color: blanchedalmond;
+     padding: 12px 13px;
+
+}
+
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+/* Media Quaries */
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+        flex-direction: column;
+        
+    }
+    .navbar{
+        flex-direction: column;
+        transition:all 0.7s ease-out;
+        height: 460px;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav{
+        height: 72px;
+    }
+    .v-class{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .secondHalf{
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    
+}
